@@ -2,3 +2,76 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    /*Quando coloca o height, a define a altura que foi desdefinida pela flex direction*/
+    height: 100vh;
+    /*justify-content: space-between;*/
+    flex-grow: 0;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    background-color: hsl(0, 79%, 72%);
+    justify-content: space-between;
+    padding: 0 4vw;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /*position: sticky;
+    top: 0;*/
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+    background-color: lightcyan;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    align-items: center;
+   
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    height: 40px;
+    flex-grow: 0;
+
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    background-color: lightpink;
+    width: 500px;
+}
+
+main > section {
+    height: 360px;
+    background-color: white;
+    width: 160px;
+    border: 2px solid black;
+    justify-content: space-around;
+    
+    }
+    main > section > figure {
+        width: 160px;
+         
+    }
+/* ul {
+    display: flex;
+    column-gap: 4vw;
+} */
+
+main > section > figure > img {
+    height: 160px;
+    width: 160px;
+
+}
